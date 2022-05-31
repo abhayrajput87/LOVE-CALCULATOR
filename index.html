@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>love Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  </head>
+
+<body>  
+  <div id="loveh" clas"topcontainer" >
+  
+  <h1 class="demo">Hey...</h1>
+    
+  <h3>Do you wanna know how much your partner loves you?</h3>
+    <label for="yourname">What is your name?</label>
+    <input type="text" id="yourname" name="yourname" value="" >
+    <br>
+    <br>
+    <label for="birthday">Your Birthdate:</label>
+  <input type="date" id="hisbirthday" name="hisbirthday" value="">
+    <br>
+    <br>
+       <label for="theirname">What is their name?</label>
+    <input type="text" id="theirname" name="theirname" value="" >
+    <br>
+    <br>
+    <label for="birthday">Their Birthdate:</label>
+  <input type="date" id="herbirthday" name="herbirthday" value="">
+    <br>
+    <br>
+    <label for="button">Press this heart</label>
+	<input type="button" onclick="love()"
+		value="❤" />
+  </div>
+	<script>
+		function love()
+{
+ var yname=document.getElementById("yourname").value;
+ var tname=document.getElementById("theirname").value;
+ var hisbirt=document.getElementById("hisbirthday").value;
+ var herbirt=document.getElementById("herbirthday").value;
+ if(yname!==""||tname!==""){
+   if((hisbirt!==""||herbirt!==""))
+   {
+  x=100*Math.random();
+  x=Math.floor(x)+1;
+if(x>60){
+  document.getElementById("loveh").innerHTML=  "Your love score is " + x+"%."+ "You" +" and "+tname +" love each other like romio and juliet😍🥰";
+}
+else if(x<=60||x>40)
+{
+  document.getElementById("loveh").innerHTML=  "Your love score is " + x+"%." +"Be careful!!🙂";
+
+}
+else{
+  document.getElementById("loveh").innerHTML=  "Your love score is " + x+"%."+ "You" +" and "+tname +"  go together like oil and water🥀☹";
+}
+ }
+else{
+  document.getElementById("loveh").innerHTML="Please enter the Date of birth";
+
+}}
+ else{
+  document.getElementById("loveh").innerHTML="Please enter the valid names";
+ }
+ }
+
+	</script>
+</body>
+
+</html>

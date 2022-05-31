@@ -1,0 +1,32 @@
+body{
+    text-align: center;
+    background-color: antiquewhite;
+  }
+  h1{
+  display: inline-block;
+  }
+  .topcontainer{
+    width: 100%;
+
+  }
+  
+
+/*function love()
+{
+  x=100*Math.random();
+  x=Math.floor(x)+1;
+return x;
+}
+y=love();
+if(y>70){
+  alert("Your love score is " + y+"%. you love each other like romio and juliet")
+}
+else if(y<=70||y>30)
+{
+  alert("Your love score is " + y +"%.")
+}
+else{
+ alert("Your love score is " + y+"%. you go together like oil and water")
+}
+*/
+  
