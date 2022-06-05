@@ -39,8 +39,8 @@
  var tname=document.getElementById("theirname").value;
  var hisbirt=document.getElementById("hisbirthday").value;
  var herbirt=document.getElementById("herbirthday").value;
- if(yname!==""||tname!==""){
-   if((hisbirt!==""||herbirt!==""))
+ if(yname!==""&&tname!==""){
+   if((hisbirt!==""&&herbirt!==""))
    {
   x=100*Math.random();
   x=Math.floor(x)+1;
